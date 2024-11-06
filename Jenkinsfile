@@ -9,7 +9,6 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        docker build -t ilovesnows/portal:red .
         docker push ilovesnows/portal:red
         '''
       }
