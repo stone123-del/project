@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
         sudo docker build -t ilovesnows/portal:red .
-        sudo docker push ilovesnows/portar:red
+        sudo docker push ilovesnows/portal:red
         '''
       }
     }
