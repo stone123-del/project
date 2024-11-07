@@ -9,7 +9,7 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        sudo docker build ilovesnows/portal:red .
+        sudo docker build -t ilovesnows/portal:red .
         sudo docker push ilovesnows/portal:red
         '''
       }
